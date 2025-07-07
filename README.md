@@ -25,21 +25,21 @@ CREATE TABLE empleados (
     nombre VARCHAR(50),
     salario DECIMAL(10,2)
 );
-
+```
 INSERT INTO empleados (nombre, salario) VALUES
 ('Juan Pérez', 1500.00),
 ('Ana Gómez', 3000.00),
 ('Carlos Ruiz', 6000.00);
-🔹 Caso 2: Cálculo de Edad de Clientes
+## 🔹 Caso 2: Cálculo de Edad de Clientes
 🧩 Escenario:
 En la empresa MarketShop, se necesita calcular la edad de los clientes a partir de su fecha de nacimiento para determinar estrategias de marketing.
 
-✅ Tarea:
+### ✅ Tarea:
 Crea una función llamada calcular_edad que reciba un DATE y devuelva la edad del cliente.
 
 Usa la función en un SELECT sobre la tabla clientes.
 
-sql
+```sql
 Copiar
 Editar
 CREATE TABLE clientes (
@@ -52,16 +52,17 @@ INSERT INTO clientes (nombre, fecha_nacimiento) VALUES
 ('Luis Martínez', '1990-06-15'),
 ('María López', '1985-09-20'),
 ('Pedro Gómez', '2000-03-10');
-🔹 Caso 3: Formatear Números de Teléfono
+```
+## 🔹 Caso 3: Formatear Números de Teléfono
 🧩 Escenario:
 En CallCenter Solutions, los números de teléfono están almacenados sin formato y se necesita presentarlos en el formato (XXX) XXX-XXXX.
 
-✅ Tarea:
+### ✅ Tarea:
 Crea una función llamada formatear_telefono que reciba un número de teléfono en formato XXXXXXXXXX y lo devuelva en formato (XXX) XXX-XXXX.
 
 Usa la función en un SELECT sobre la tabla contactos.
 
-🔹 Caso 4: Clasificación de Productos por Precio
+## 🔹 Caso 4: Clasificación de Productos por Precio
 🧩 Escenario:
 En la tienda E-Shop, los productos se categorizan en tres niveles según su precio:
 
@@ -71,7 +72,7 @@ Medio: Entre 50 y 200 USD.
 
 Alto: Más de 200 USD.
 
-✅ Tarea:
+### ✅ Tarea:
 Crea una función llamada clasificar_precio que reciba un DECIMAL(10,2) y devuelva un VARCHAR(10) con la clasificación del producto (Bajo, Medio, Alto).
 
 Usa la función en un SELECT sobre la tabla productos.
